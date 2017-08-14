@@ -48,6 +48,7 @@
 		 url('http://websitehouse.ir/fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 		 url('http://websitehouse.ir/fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+p, span, h1, h2, h3 , h4, h5, h6, a{font-family:'IRANSans', tahoma !important;}
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 .uap-dashboard-logo{right:0 !important;}
 .uap-dashboard-wrap .uap-admin-header .uap-top-menu-section .uap-dashboard-menu{padding-right:200px;padding-left:0 !important;}

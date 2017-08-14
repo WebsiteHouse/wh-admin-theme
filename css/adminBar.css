@@ -49,6 +49,26 @@
 		 url('http://websitehouse.ir/fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+.uap-dashboard-logo{right:0 !important;}
+.uap-dashboard-wrap .uap-admin-header .uap-top-menu-section .uap-dashboard-menu{padding-right:200px;padding-left:0 !important;}
+.uap-dashboard-wrap .uap-admin-header .uap-top-menu-section .uap-dashboard-menu ul li{float:right !important;}
+.uap-dashboard-wrap .uap-admin-header .uap-top-menu-section .uap-dashboard-menu .uap-page-title{text-transform:none !important;font-family:'IRANSans',tahoma !important;}
+.uap-add-new-like-wp, .uap-special-buttons-users {direction:ltr;}
+.uap-add-new-like-wp{position: absolute;left: 5px;}
+.uap-wrapper .uap-admin-tables thead th, .uap-wrapper .uap-admin-tables tfoot th {
+    color: rgba(255,255,255,1.0);
+    font-family: IRANSans !important;
+    padding: 3px !important;
+    font-weight: 700 !important;
+    font-size: 10px !important;
+}
+.uap-page-title,.uap-special-button,.uap-top-message{font-family:'IRANSans', tahoma !important;}
+.uap-top-message{font-size:18px}
+.uap-list-affiliates-name-label{font-family:'IRANSans', tahoma !important;}
+input[type=checkbox]:checked:before{margin: -8px -8px 0px 0px !important;}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {float: right !important;}
+.mitoLink{display:none!important;}
+
 /* LESS Elements 0.9 */
 .fontAwesome {
   font-family: "fontAwesome" !important;

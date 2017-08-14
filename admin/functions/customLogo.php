@@ -38,10 +38,6 @@ function aquila_new_logo_admin() {
 	    background-repeat: no-repeat;
 	    background-position: center center;
 	    margin: 0%!important;
-	    max-width: 80%;
-	    height: 80%;
-	    top: 10%;
-	    left: 10%;
 		}
 	</style>";
 }

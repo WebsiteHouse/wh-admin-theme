@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+a, h1, h2, h3, h4, h5, h6, li, ul, p, #wpcontent{font-family:IRANSans, tahoma !important}
+#wpcontent #wp-toolbar .menupop a, #wpcontent #wp-toolbar .menupop a .ab-label{font-family:IRANSans, tahoma !important;}
 /* LESS Elements 0.9 */
 .fontAwesome {
   font-family: "fontAwesome" !important;
@@ -12,13 +11,13 @@
   line-height: 1.6;
 }
 .serif {
-  font-family: 'Raleway', serif;
+ font-family: IRANSans, tahoma !important;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+ font-family: IRANSans, tahoma !important;
 }
 .heading {
-  font-family: 'Raleway', sans-serif;
+font-family: IRANSans, tahoma !important;
 }
 .bgCov {
   background-size: cover;
@@ -2344,7 +2343,7 @@ html.wp-toolbar {
   }
 }
 html.wp-toolbar body.wp-admin {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: IRANSans, tahoma !important;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h1,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h2,
@@ -2354,7 +2353,7 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
   text-transform: uppercase;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: IRANSans, tahoma !important;
 }
 @media only screen and (max-width: 782px) {
   html.wp-toolbar body.wp-admin #wpcontent .wrap h1.wp-heading-inline,
@@ -2881,11 +2880,18 @@ ul#adminmenu > li.current > a.current:after {
 #adminmenu .awaiting-mod,
 #adminmenu .update-plugins {
   color: #f5f5f5;
-  background: #0091ea;
-  margin-top: 0px;
-  position: absolute;
-  margin-left: 10px;
-  line-height: 2;
+    background: #f11971;
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 700;
+    width: 26px;
+    font-size: 16px;
+    height: 26px;
+    margin-left: 10px;
+    line-height: 2;
+    text-align: center;
 }
 #adminmenu li.current a .awaiting-mod,
 #adminmenu li a.wp-has-current-submenu .update-plugins,
@@ -3088,7 +3094,7 @@ ul#adminmenu #collapse-button .collapse-button-icon {
   width: 60px;
 }
 ul#adminmenu #collapse-button .collapse-button-label {
-  padding-left: 60px;
+  padding-right: 60px;
   text-transform: uppercase;
 }
 ul#adminmenu a:after,

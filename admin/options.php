@@ -8,8 +8,8 @@ function aquila_add_admin_menu(  ) {
 
 	add_submenu_page( 
 		'options-general.php', 
-		'Aquila Settings', 
-		'<i class="aquila-aquila" style="font-size: 140%;float: right;line-height: 0.8;"></i>  Aquila Settings', 
+		'تنظیمات قالب مدیریت', 
+		'<i class="aquila-aquila" style="font-size: 140%;float: right;line-height: 0.8;"></i>  تنظیمات قالب مدیریت', 
 		'manage_options', 
 		'aquilaSettings', 
 		'aquila_options_page' 
@@ -31,7 +31,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_abLinks', 
-		__( 'Show <strong>Adminbar</strong> links?', 'aquila-admin-theme' ), 
+		__( 'نمایش لینک های نوار بالای مدیریت', 'aquila-admin-theme' ), 
 		'aquila_chk_abLinks_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -39,7 +39,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_pluginSupport', 
-		__( 'Show Editors <strong>Plugins Support</strong> metabox?', 'aquila-admin-theme' ), 
+		__( 'نمایش راهنمای پیش فرض پلاگین ها', 'aquila-admin-theme' ), 
 		'aquila_chk_pluginSupport_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -47,7 +47,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_dashBoxes', 
-		__( 'Show all other <strong>Dashboard metaboxes</strong>?', 'aquila-admin-theme' ), 
+		__( 'نمایش همه ی بلاک های داشبورد', 'aquila-admin-theme' ), 
 		'aquila_chk_dashBoxes_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -55,7 +55,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_postBlog', 
-		__( 'Do not rename <strong>Posts</strong> to <strong>Blog</strong>', 'aquila-admin-theme' ), 
+		__( 'نام پست را به بلاگ تغییر نده', 'aquila-admin-theme' ), 
 		'aquila_chk_postBlog_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -63,7 +63,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_new_logo', 
-		__( 'Custom logo', 'aquila-admin-theme' ), 
+		__( 'تغییر لوگو', 'aquila-admin-theme' ), 
 		'aquila_new_logo_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -71,7 +71,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_new_logo_sqr', 
-		__( 'Custom logo (square) <br/><em>Used in the "folded" menu</em>', 'aquila-admin-theme' ), 
+		__( 'لوگوی مربعی برای نمایش در حالت بسته منو', 'aquila-admin-theme' ), 
 		'aquila_new_logo_sqr_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -140,8 +140,8 @@ function aquila_new_logo_render(  ) {
 	?>
 
 	<input class="aquilaNewLogoUrl" id="" type="text" name="aquila_settings[aquila_new_logo]" value="<?php echo $aquilaNewLogo; ?>" style="margin-bottom:10px; clear:right; display: none;">
-	<a href="#" class="button aquilaNewLogoUpload">Upload logo</a>
-	<a href="#" class="button aquilaNewLogoClear">Remove logo</a>
+	<a href="#" class="button aquilaNewLogoUpload">بارگذاری لوگو</a>
+	<a href="#" class="button aquilaNewLogoClear">حرف لوگو</a>
 	<img class="aquilaOptionsLogo aquila_new_logo" src="<?php echo $aquilaNewLogo; ?>" />
 	<?php echo wp_get_attachment_url( get_option( 'media_selector_attachment_id' ) ); ?>
 	<?php
@@ -159,8 +159,8 @@ function aquila_new_logo_sqr_render(  ) {
 	?>
 
 	<input class="aquilaNewLogoUrl" id="" type="text" name="aquila_settings[aquila_new_logo_sqr]" value="<?php echo $aquilaNewLogoSqr; ?>" style="margin-bottom:10px; clear:right; display: none;">
-	<a href="#" class="button aquilaNewLogoUpload">Upload logo</a>
-	<a href="#" class="button aquilaNewLogoClear">Remove logo</a>
+	<a href="#" class="button aquilaNewLogoUpload">بارگذاری لوگو</a>
+	<a href="#" class="button aquilaNewLogoClear">حذف لوگو</a>
 	<img class="aquilaOptionsLogo aquila_new_logo" src="<?php echo $aquilaNewLogoSqr; ?>" />
 	<?php echo wp_get_attachment_url( get_option( 'media_selector_attachment_id' ) ); ?>
 	<?php
